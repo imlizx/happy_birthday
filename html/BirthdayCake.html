@@ -2,13 +2,25 @@
 <html>
 
 <head>
-
   <meta charset="UTF-8">
-
   <title>Happy Birthday</title>
-
   <link rel="stylesheet" href="../css/styless.css" media="screen" type="text/css" />
 </head>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+     const links = document.querySelectorAll('.lk1');
+     const screenWidth = window.screen.width;
+     
+     links.forEach(link => {
+         if (screenWidth <= 768) {  // 移动设备通常 ≤ 768px
+             link.href = "mobile_memories.html";
+         } else {
+             link.href = "Memories.html";
+         }
+     });
+  });
+</script>
 
 <body class="bg">
 
@@ -190,6 +202,7 @@
       </div>
     </a>
   </div>
+
   <div class="button-style2">
     <a class="lk2">
       <div class="link2">
@@ -211,8 +224,12 @@
     <li></li>
     <li></li>
   </ul>
+
+
   <script src='../js/jquery-3.6.0.min.js'></script>
   <audio src="../music/2.mp3" autoplay="autoplay" loop="loop">
+
+
 </body>
 
 </html>
