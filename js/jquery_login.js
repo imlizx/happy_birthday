@@ -9,7 +9,7 @@ $('#login-button').click(function (event) {
 		$('form').fadeOut(500);										// 淡出表单，持续时间为500毫秒
 		$('.wrapper').addClass('form-success');						// 给.wrapper添加类名form-success
 		// requestFullScreen();										// 请求全屏显示
-		setTimeout(function(){location.href="/happy_birthday/html/index1.html";},1500);	// 延迟1.5秒后跳转到 ../html/index1
+		setTimeout(function(){location.href="/happy_birthday/html/index1.html";},1500);	// 延迟1.5秒后跳转到  /happy_birthday/html/index1.html   ../html/index1.html
 	}
 	else{
 		alert("密码是你的生日哦!（密码为4位数）");
